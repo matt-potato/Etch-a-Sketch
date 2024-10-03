@@ -3,18 +3,23 @@ html, body {
     margin: 0;
     min-height: 100%;
 }
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-.grid {
-    display: flex;
+
+.etch-sketch {
+    max-width: 600px;
     margin: 3rem auto;
-    flex-wrap: wrap;
-    max-width: 960px;
+    padding: 3rem;
+    background: red;
+    border-radius: 3rem;
 }
-.grid-item {
+
+.etch-sketch__grid {
+    aspect-ratio: 1;
+    display: flex;
+    flex-wrap: wrap;
+    background: #EEE;
+}
+
+.etch-sketch__grid-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,6 +27,42 @@ html, body {
     aspect-ratio: 1;
     transition: .1s;
 }
-    .grid-item.colored {
+    .etch-sketch__grid-item.colored {
         background: #000;
     }
+
+.etch-sketch__interface {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.etch-sketch__interface label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    flex-grow: 1;
+    color: #FFF;
+}
+
+.etch-sketch__grid-number,
+.etch-sketch__btn {
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.etch-sketch__grid-number {
+    order: 1;
+}
+
+.etch-sketch__btn {
+    order: 3;
+}

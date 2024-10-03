@@ -7,8 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button class="btn_grid">Number of Squares Per Side</button>
-    <div class="grid"></div>
+    <div class="etch-sketch">
+        <div class="etch-sketch__screen">
+            <div class="etch-sketch__grid"></div>
+        </div>
+        <div class="etch-sketch__interface">
+            <label for="grid-number">
+                Number of Squares Per Side
+                <div class="etch-sketch__error"></div>
+            </label>
+            <input type="text" class="etch-sketch__grid-number" name="grid-number">
+            <button class="etch-sketch__btn">Submit</button>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
